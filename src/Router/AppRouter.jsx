@@ -9,7 +9,9 @@ export default function AppRouter() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route path="/" element={<TemplateHome />} />
-          <Route path="/2" element={<span>w</span>} />
+          <Route path="/about-us" element={<span>About us</span>} />
+          <Route path="/menu" element={<span>Menu</span>} />
+          <Route path="/contacts" element={<span>Contacts</span>} />
         </Route>
       </Routes>
     </BrowserRouter>

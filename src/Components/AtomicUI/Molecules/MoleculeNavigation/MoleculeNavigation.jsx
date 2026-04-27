@@ -1,7 +1,16 @@
-import React from 'react'
+import React from "react";
 
-export default function MoleculeNavigation() {
+import "./moleculeNavigation.scss";
+import AtomList from "../../Atoms/List/AtomList";
+
+export default function MoleculeNavigation({ children }) {
   return (
-    <div>MoleculeNavigation</div>
-  )
+    <>
+      <div className="nav_content">
+        <AtomList className="list_navigation">{children}</AtomList>
+      </div>
+      <button className="mobile_nav_button">X</button>
+      <div className="mobile_nav_content">{<AtomList className="mobile_list_navigation">{children}</AtomList>}</div>
+    </>
+  );
 }

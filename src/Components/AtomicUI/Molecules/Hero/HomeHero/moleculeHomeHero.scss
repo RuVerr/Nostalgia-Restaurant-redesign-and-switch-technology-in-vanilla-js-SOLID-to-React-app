@@ -1,0 +1,33 @@
+.header_content {
+  display: flex;
+  justify-content: space-around;
+  height: 100dvh;
+  .left_hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 100px;
+    max-width: 600px;
+    .hero_title {
+      color: #045c03;
+      margin-bottom: 10px;
+    }
+    .left_hero_paragraph {
+      margin-bottom: 20px;
+    }
+    .button_hero:hover {
+      border-radius: 0 20px 0 20px;
+      scale: 1.4;
+    }
+  }
+  .right_hero {
+    position: relative;
+    .salad_image,
+    .salad_bg {
+      position: absolute;
+      top: 0;
+      left: 100;
+    }
+  }
+}

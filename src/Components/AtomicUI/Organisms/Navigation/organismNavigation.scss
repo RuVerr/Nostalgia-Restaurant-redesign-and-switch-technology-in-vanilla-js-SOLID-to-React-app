@@ -1,0 +1,24 @@
+$paddingNav: clamp(7px, 1.5vw, 15px);
+$border-stile: 1px solid rgb(222, 222, 222);
+.list_item {
+  transition: transform 0.2s ease-in-out;
+  .list_link {
+    font-family: "Raleway";
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: $paddingNav 0;
+  }
+}
+.list_item:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .list_item {
+    border-top: $border-stile;
+    border-bottom: $border-stile;
+    padding-left: 30px;
+  }
+}

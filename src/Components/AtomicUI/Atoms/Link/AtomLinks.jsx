@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function AtomLinks({ value, title, href, className = "" }) {
-  switch (value) {
-    case "Link":
+export default function AtomLinks({ type, title, dataText = "", href, refLink, className = "" }) {
+  switch (type) {
+    case "react_link":
       return (
-        <Link to={href} className={`react_dom_link ${className}`}>
+        <Link to={href} ref={refLink} data-text={dataText} className={`react_dom_link ${className}`}>
           {title}
         </Link>
       );
